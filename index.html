@@ -4,8 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Trace Sureth Letters</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Syriac+Eastern&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEE2NCEYRZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XEE2NCEYRZ');
+  </script>
 </head>
 <body>
   <div class="header-container">
@@ -50,9 +60,11 @@
     <canvas id="traceCanvas" width="200" height="200"></canvas>
   </div>
 
-  <button class="control" id="previousButton" onclick="previousLetter()">< Previous</button>
+  <div class="image-gallery"></div>
+
+  <!-- <button class="control" id="previousButton" onclick="previousLetter()">< Previous</button>
   <button class="control" id="clearButton" onclick="clearCanvas()">Clear</button>
-  <button class="control" id="nextButton" onclick="nextLetter()">Next ></button>
+  <button class="control" id="nextButton" onclick="nextLetter()">Next ></button> -->
   <script src="script.js"></script>
 </body>
 </html>
